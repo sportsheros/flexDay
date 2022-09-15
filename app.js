@@ -36,6 +36,6 @@ app.get("/api", (req, res) => {
 
 app.use("/api", indexRoute);
 // Start the server
-const PORT = process.env.NODE_PORT || 8080;
+const PORT = process.env.NODE_PORT || 4000;
 app.listen(PORT, () => {  console.log(`App listening on port ${PORT}`); 
 });
