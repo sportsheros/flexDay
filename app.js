@@ -4,12 +4,6 @@ require("module-alias/register");
 const dotenv = require('dotenv');
 const indexRoute = require("@routes/index");
 
-const redis = require('redis');
-const client = redis.createClient();
-
-client.on('connect', function() {
-  console.log('Connected!');
-});
 var cors = require("cors");
 dotenv.config();
 
